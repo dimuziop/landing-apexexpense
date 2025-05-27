@@ -1,1 +1,4 @@
-theme = "infinity"
+baseURL = 'https://apexexpense.com/'
+languageCode = 'en-us'
+title = 'ApexExpense'
+theme = 'infinity'
