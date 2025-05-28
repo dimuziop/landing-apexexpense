@@ -1,0 +1,11 @@
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" | default "" }}
+{{ $class := .Get "class" | default "fade-in" }}
+{{ $position := .Get "position" | default "center" }}
+
+<figure class="image-container" style="text-align: {{ $position }};">
+    <img src="{{ $src }}" alt="{{ $alt }}" class="{{ $class }}" loading="lazy">
+    {{ with .Get "caption" }}
+        <figcaption>{{ . }}</figcaption>
+    {{ end }}
+</figure> 

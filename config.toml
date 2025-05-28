@@ -1,4 +1,70 @@
 baseURL = 'https://apexexpense.com/'
-languageCode = 'en-us'
+languageCode = 'es-es'
 title = 'ApexExpense'
-theme = 'infinity'
+theme = 'PaperMod'
+
+# Parámetros del tema
+[params]
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = true
+  ShowWordCount = true
+  ShowFullTextinRSS = true
+  ShowToc = true
+  TocOpen = true
+  ShowTaxonomies = true
+
+  # Configuración de la página de inicio
+  [params.homeInfoParams]
+    Title = "ApexExpense"
+    Content = "Tu Solución Definitiva para la Gestión Financiera"
+
+  # Configuración de la barra lateral
+  [params.sidebar]
+    emoji = "💰"
+    subtitle = "Empodera tus finanzas personales"
+
+  # Configuración de la navegación
+  [params.nav]
+    enableSearch = true
+    enableThemeMode = true
+    enableLangMode = true
+
+  # Configuración de las redes sociales
+  [params.socialIcons]
+    email = "mailto:contact@apexexpense.com"
+    github = "https://github.com/apexexpense"
+    twitter = "https://twitter.com/apexexpense"
+    linkedin = "https://linkedin.com/company/apexexpense"
+
+# Configuración del menú
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Inicio"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "features"
+    name = "Características"
+    url = "/#caracteristicas"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "Sobre Nosotros"
+    url = "/#sobre-nosotros"
+    weight = 3
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contacto"
+    url = "/#contacto"
+    weight = 4
+
+# Configuración de taxonomías
+[taxonomies]
+  tag = "tags"
+  category = "categories"
